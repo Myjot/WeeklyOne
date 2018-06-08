@@ -1,5 +1,5 @@
 html {
-    overflow: auto;
+    
 }
 
 body {
@@ -12,7 +12,6 @@ body {
     -ms-user-select: none;
     user-select: none;
     margin: 0;
-    overflow: auto;
 }
 
 input:focus,
@@ -23,14 +22,16 @@ button:focus {
 }
 
 #container {
-    overflow: auto;
+
 }
 
 #content {
-    display: block;
+    display: flex;
     width: 1050px;
     height: 100%;
     margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #logo {
@@ -57,9 +58,9 @@ button:focus {
 
 .form {
     width: 50%;
+    height: auto;
     text-align: center;
-    margin: auto;
-    float: left;
+    margin: 0 0;
 }
 
 .topText {
@@ -229,7 +230,10 @@ select {
 .formMessage {
     width: 100%;
     border: none;
+    min-height: 200px;
+    min-width: 250px;
     max-height: 200px;
+    max-width: 330px;
     margin: 3px 0px;
 }
 
